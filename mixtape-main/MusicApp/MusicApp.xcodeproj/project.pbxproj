@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61C0EE542921560C0000F0E3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0EE532921560C0000F0E3 /* Item.swift */; };
+		61C0EE5629215DBA0000F0E3 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0EE5529215DBA0000F0E3 /* ItemStore.swift */; };
 		BD1AAA2E28AC23E8002E4F1A /* ViewController_LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1AAA2D28AC23E8002E4F1A /* ViewController_LoginPage.swift */; };
 		BD1AAA3028AC2A40002E4F1A /* responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1AAA2F28AC2A40002E4F1A /* responses.swift */; };
 		BDD7433128AE966D007BCCC0 /* ViewController_PastEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD7433028AE966D007BCCC0 /* ViewController_PastEntries.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61C0EE532921560C0000F0E3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		61C0EE5529215DBA0000F0E3 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		BD1AAA2D28AC23E8002E4F1A /* ViewController_LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_LoginPage.swift; sourceTree = "<group>"; };
 		BD1AAA2F28AC2A40002E4F1A /* responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = responses.swift; sourceTree = "<group>"; };
 		BDD7433028AE966D007BCCC0 /* ViewController_PastEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_PastEntries.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				BDE40A9528ABEBCE00EBF7DA /* Main.storyboard */,
 				BDF9B5E928AD833B00C068EC /* ViewController_TextNote.swift */,
 				BDF9B5E728AD763F00C068EC /* ViewController_FinishedEntry.swift */,
+				61C0EE532921560C0000F0E3 /* Item.swift */,
+				61C0EE5529215DBA0000F0E3 /* ItemStore.swift */,
 				BDF9B5E528AD697C00C068EC /* PlaylistViewController.swift */,
 				BDF9B5E328AD3E7600C068EC /* ViewController_DataEntry.swift */,
 				BDF9B5E128AD335F00C068EC /* ViewController_Mood.swift */,
@@ -172,9 +178,11 @@
 				BD1AAA2E28AC23E8002E4F1A /* ViewController_LoginPage.swift in Sources */,
 				BDF9B5E228AD335F00C068EC /* ViewController_Mood.swift in Sources */,
 				BDE40A9028ABEBCE00EBF7DA /* AppDelegate.swift in Sources */,
+				61C0EE542921560C0000F0E3 /* Item.swift in Sources */,
 				BDE40A9228ABEBCE00EBF7DA /* SceneDelegate.swift in Sources */,
 				BDF9B5E828AD763F00C068EC /* ViewController_FinishedEntry.swift in Sources */,
 				BDD7433128AE966D007BCCC0 /* ViewController_PastEntries.swift in Sources */,
+				61C0EE5629215DBA0000F0E3 /* ItemStore.swift in Sources */,
 				BDF9B5E628AD697C00C068EC /* PlaylistViewController.swift in Sources */,
 				BDF9B5E428AD3E7600C068EC /* ViewController_DataEntry.swift in Sources */,
 				BD1AAA3028AC2A40002E4F1A /* responses.swift in Sources */,
