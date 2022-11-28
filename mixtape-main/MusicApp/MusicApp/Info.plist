@@ -2,15 +2,37 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ATSApplicationFontsPath</key>
-	<string></string>
-	<key>UIAppFonts</key>
+	<key>CFBundleURLTypes</key>
 	<array>
-		<string>codec-pro.regular.ttf</string>
-		<string>KBCloudyDay 3.ttf</string>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string></string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>mixedtape.com/callback</string>
+			<key>CFBundleURLName</key>
+			<string>kwk.MusicApp</string>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.spotify.iOS-SDK-Quick-Start</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>spotify-ios-quick-start</string>
+			</array>
+		</dict>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>spotify</string>
+	</array>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+		<key>UIApplicationSupportsTabbedSceneCollection</key>
+		<false/>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
@@ -28,5 +50,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>0</key>
+	<string></string>
 </dict>
 </plist>

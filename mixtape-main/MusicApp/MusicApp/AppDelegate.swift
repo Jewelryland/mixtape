@@ -7,17 +7,90 @@
 
 import UIKit
 import CoreData
+//import SpotifyiOS.framework
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
+    
+    //class AppDelegate: UIResponder, UIApplicationDelegate, SPTSessionManagerDelegate {
 
+    // nov 27yh advanced user authorization https://developer.spotify.com/documentation/ios/quick-start
+    // This will require us to implement the following three methods:
+    //```swift
+    //func sessionManager(manager: SPTSessionManager, didInitiate session: SPTSession) {
+      //print("success", session)
+    //}
+    //func sessionManager(manager: SPTSessionManager, didFailWith error: Error) {
+      //print("fail", error)
+    //}
+    //func sessionManager(manager: SPTSessionManager, didRenew session: SPTSession) {
+      //print("renewed", session)
+    //}
+    //```
 
+    //#### Instantiate `SPTConfiguration`
 
+    //At a class-level, we can define our Client ID, Redirect URI and instantiate the SDK:
+
+    //```swift
+    //let SpotifyClientID = "9d4be7f686624917a9d885eb1d45e587"
+    //let SpotifyRedirectURL = URL(string: "spotify-ios-quick-start://spotify-login-callback")!
+
+    //lazy var configuration = SPTConfiguration(
+       // clientID: Constants.SpotifyClientID,
+        //redirectURL: Constants.SpotifyRedirectURL
+    //)
+    
+    //```swift
+    //lazy var sessionManager: SPTSessionManager = {
+      //if let tokenSwapURL = URL(string: "https://glitch.com/~spotify-token-swap/api/token"),
+        // let tokenRefreshURL = URL(string: "https://github.com/bih/spotify-token-swap-service#one-click-with-heroku/api/refresh_token") {
+       // self.configuration.tokenSwapURL = tokenSwapURL
+       // self.configuration.tokenRefreshURL = tokenRefreshURL
+        //self.configuration.playURI = ""
+      //}
+      //let manager = SPTSessionManager(configuration: self.configuration, delegate: self)
+     // return manager
+   // }()
+    //```
+    //#### Configure Initial Music
+
+   // iOS requires us to define a `playURI` (as shown in the last step) in order to play music to wake up the Spotify main application. This is an iOS-specific requirement. There's two values `self.configuration.playURI` accepts:
+
+    //**An empty value:** If empty, it will resume playback of user's last track. Example:
+
+   // ```swift
+   // self.configuration.playURI = ""
+   // ```
+
+    //**A valid Spotify URI:** Otherwise, provide a Spotify URI. Example:
+
+    //```swift
+    //self.configuration.playURI = "spotify:track:20I6sIOMTCkB6w7ryavxtO"
+    //```
+    
+    //#### Invoke Auth Modal
+
+    //With `SPTConfiguration` and `SPTSessionManager` both configured, we can invoke the authorization screen:
+
+    //```swift
+   // let requestedScopes: SPTScope = [.appRemoteControl]
+    //self.sessionManager.initiateSession(with: requestedScopes, options: .default)
+    //```
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+       // setupSpotify()
         return true
     }
+    
+    
 
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

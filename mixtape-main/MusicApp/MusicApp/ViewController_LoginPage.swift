@@ -8,14 +8,10 @@
 import UIKit
 
 class ViewController_LoginPage: UIViewController {
-
+  
     @IBOutlet weak var nameInput: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
     
     @IBAction func enter(_ sender: Any) {
         if let temp = nameInput.text {
@@ -33,5 +29,5 @@ class ViewController_LoginPage: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+   
 }

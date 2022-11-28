@@ -23,8 +23,16 @@ class ViewController_FinishedEntry: UIViewController {
         
         
     @IBAction func buttonTapped(_ sender: UIButton) {
-            print("Called buttonTapped(_:)")
-    }
+        
+        print("Called buttonTapped(_:)")
+        
+        let itemStore = ItemStore()
+        let newItem = itemStore.createItem()
+        newItem.listening = listening.text!
+        newItem.moodToday = moodToday.text
+        newItem.dateTitle = dateTitle.text
+        newItem.noteText = noteText.text
+        var content = itemStore.saveChanges()    }
     
     
     override func viewDidLoad() {
@@ -47,14 +55,13 @@ class ViewController_FinishedEntry: UIViewController {
         super.viewWillDisappear(animated)
         view.endEditing(true)
         
- 
-        let itemStore = ItemStore()
-        let newItem = itemStore.createItem()
-        newItem.listening = listening.text!
-        newItem.moodToday = moodToday.text
-        newItem.dateTitle = dateTitle.text
-        newItem.noteText = noteText.text
-        var content = itemStore.saveChanges()
+       // let itemStore = ItemStore()
+       // let newItem = itemStore.createItem()
+       // newItem.listening = listening.text!
+      //  newItem.moodToday = moodToday.text
+       // newItem.dateTitle = dateTitle.text
+       // newItem.noteText = noteText.text
+       // var content = itemStore.saveChanges()
     }
     /*
     // MARK: - Navigation

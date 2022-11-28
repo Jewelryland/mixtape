@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61229BA92925305600442C16 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61229BA82925305600442C16 /* ItemViewController.swift */; };
+		61229BB22928425D00442C16 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61229BAD29270C5200442C16 /* SpotifyiOS.framework */; };
+		616009A72934039000B44DC4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616009A62934039000B44DC4 /* Constants.swift */; };
 		61C0EE542921560C0000F0E3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0EE532921560C0000F0E3 /* Item.swift */; };
 		61C0EE5629215DBA0000F0E3 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0EE5529215DBA0000F0E3 /* ItemStore.swift */; };
 		BD1AAA2E28AC23E8002E4F1A /* ViewController_LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1AAA2D28AC23E8002E4F1A /* ViewController_LoginPage.swift */; };
@@ -28,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61229BA82925305600442C16 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		61229BAD29270C5200442C16 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = SOURCE_ROOT; };
+		616009A32932C43B00B44DC4 /* MusicApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		616009A62934039000B44DC4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		61C0EE532921560C0000F0E3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		61C0EE5529215DBA0000F0E3 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		BD1AAA2D28AC23E8002E4F1A /* ViewController_LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_LoginPage.swift; sourceTree = "<group>"; };
@@ -55,18 +62,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61229BB22928425D00442C16 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61229BAF29270C9700442C16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61229BAD29270C5200442C16 /* SpotifyiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BDE40A8328ABEBCD00EBF7DA = {
 			isa = PBXGroup;
 			children = (
 				BDD7433028AE966D007BCCC0 /* ViewController_PastEntries.swift */,
 				BDE40A8E28ABEBCE00EBF7DA /* MusicApp */,
 				BDE40A8D28ABEBCE00EBF7DA /* Products */,
+				61229BAF29270C9700442C16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +98,8 @@
 		BDE40A8E28ABEBCE00EBF7DA /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				616009A32932C43B00B44DC4 /* MusicApp-Bridging-Header.h */,
+				61229BA82925305600442C16 /* ItemViewController.swift */,
 				BDE40A8F28ABEBCE00EBF7DA /* AppDelegate.swift */,
 				BDE40A9128ABEBCE00EBF7DA /* SceneDelegate.swift */,
 				BDE40A9328ABEBCE00EBF7DA /* ViewController.swift */,
@@ -99,6 +118,7 @@
 				BDE40AA028ABEBD000EBF7DA /* Info.plist */,
 				BDE40A9828ABEBCE00EBF7DA /* MusicApp.xcdatamodeld */,
 				BDD7433228AEC6A8007BCCC0 /* playMusicTableViewController.swift */,
+				616009A62934039000B44DC4 /* Constants.swift */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -175,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDE40A9428ABEBCE00EBF7DA /* ViewController.swift in Sources */,
+				61229BA92925305600442C16 /* ItemViewController.swift in Sources */,
 				BD1AAA2E28AC23E8002E4F1A /* ViewController_LoginPage.swift in Sources */,
 				BDF9B5E228AD335F00C068EC /* ViewController_Mood.swift in Sources */,
 				BDE40A9028ABEBCE00EBF7DA /* AppDelegate.swift in Sources */,
@@ -189,6 +210,7 @@
 				BDF9B5EA28AD833B00C068EC /* ViewController_TextNote.swift in Sources */,
 				BDE40A9A28ABEBCE00EBF7DA /* MusicApp.xcdatamodeld in Sources */,
 				BDD7433328AEC6A8007BCCC0 /* playMusicTableViewController.swift in Sources */,
+				616009A72934039000B44DC4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +272,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -310,6 +334,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -321,6 +347,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -335,6 +362,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MusicApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -347,9 +380,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kwk.MusicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -362,6 +398,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MusicApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -374,9 +416,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = kwk.MusicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
